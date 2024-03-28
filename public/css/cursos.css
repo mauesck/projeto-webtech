@@ -1,0 +1,50 @@
+main{
+    background-color: #333;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.div-bloco{
+    width: 50%;
+    min-width: 300px;
+    margin: 10px;
+}
+
+.div-bloco h1{
+    font-size: 30px;
+    color: aqua;
+}
+
+#frotend div div{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+section img{
+    width: 100px;
+    margin: 20px;
+}
+
+button{
+    margin: 30px;
+    padding: 10px;
+    border: none;
+    background-color: #1C6061;
+    border-radius: 15px;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #164a4b;
+}

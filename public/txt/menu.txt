@@ -1,0 +1,45 @@
+<!-- menu -->
+    <div id="menu-dentro"></div>
+    <div id="div-logo-span"></div>
+    <header>
+        <img src="imgs/logo.png" id="header-logo" alt="logo">
+        <nav>
+            <div id="container-links">
+                <div id="div-link">
+                    <a href="index.html" id="link-home">Home</a>
+                </div>
+                <div id="div-link">
+                    <a href="#">Sobre</a>
+                    <div id="submenu">
+                        <a href="">opção 1</a>
+                        <a href="">opção 2</a>
+                        <a href="">opção 3</a>
+                    </div>
+                </div>
+                <div id="div-link">
+                    <a href="#">Serviços</a>
+                    <div id="submenu">
+                        <a href="">opção 1</a>
+                        <a href="">opção 2</a>
+                        <a href="">opção 3</a>
+                    </div>
+                </div>
+                <div id="div-link">
+                    <a href="#">Catálogo</a>
+                    <div id="submenu">
+                        <a href="">opção 1</a>
+                        <a href="">opção 2</a>
+                        <a href="">opção 3</a>
+                    </div>
+                </div>
+                <div id="div-link">
+                    <a href="#">Contato</a>
+                    <div id="submenu">
+                        <a href="">WhatsApp</a>
+                        <a href="">E-mail</a>
+                        <a href="">Presencial</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>

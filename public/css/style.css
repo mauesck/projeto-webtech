@@ -1,0 +1,297 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+main {
+    margin: 0;
+    flex-direction: column;
+}
+
+section {
+    width: 100%;
+}
+
+/*carrosel*/
+#passar-direita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid;
+}
+
+#passar-direita div {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#div1 {
+    background-color: brown;
+}
+
+#div2 {
+    background-color: cadetblue;
+}
+
+#div3 {
+    background-color: burlywood
+}
+
+#passar-direita {
+    width: 100%;
+    overflow: hidden;
+}
+
+.divs {
+    display: inline-block;
+    animation: moverDireita 5s linear infinite;
+}
+
+@keyframes moverDireita {
+    0% {
+        transform: translateX(-350%);
+    }
+
+    100% {
+        transform: translateX(350%);
+    }
+}
+
+/*slides*/
+#section-slides{
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border: none;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 400px;
+    flex: 0 0 auto;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-control {
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 30px;
+    color: white;
+}
+
+.carousel-indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #333;
+}
+
+/* banners */
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item div {
+    width: 50%;
+    min-width: 300px;
+}
+
+.carousel-item h1,
+.carousel-item p {
+    color: aliceblue;
+}
+
+.carousel-item p {
+    font-size: 20px;
+}
+
+.carousel-item button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 15px;
+    background-color: #247c7e;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.carousel-item button:hover {
+    background-color: #1c6061;
+}
+
+/* section missao */
+
+#missao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    min-height: 500px;
+    position: relative;
+}
+
+#missao div {
+    width: 40%;
+    min-width: 300px;
+    margin: 10px;
+}
+
+#missao-div-texto {
+    padding: 10px;
+    box-shadow: 0 8px 16px #666666;
+}
+
+#missao h1 {
+    margin: 0;
+}
+
+#missao div img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* section equipe docente */
+
+#equipe-docente {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#equipe-docente h1 {
+    font-size: 40px;
+    color: #247c7e;
+}
+
+#equipe-docente div {
+    width: 40%;
+    min-width: 300px;
+}
+
+#equipe-docente div img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.docente-div-texto {
+    padding: 10px;
+    box-shadow: 0 8px 16px #666666;
+}
+
+/* section depoimentos */
+
+#depoimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.depoimentos-div-texto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#depoimentos h1{
+    color: #0076ad;
+    font-size: 30px;
+}
+
+.depoimentos-div-texto div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 40%;
+    min-width: 320px;
+    margin: 10px;
+    border: 1px solid #0076ad;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.depoimentos-div-texto div figure{
+    margin: 0;
+}
+
+.depoimentos-div-texto div img{
+    width: 100px;
+    margin: 10px;
+    box-shadow: 0 2px 2px #333;
+    border-radius: 15px;
+}
+
+.depoimentos-div-texto div p{
+    margin: 10px;
+}
+
+
+@media(max-width:768px) {
+    #equipe-docente h1 {
+        font-size: 30px;
+        color: #247c7e;
+    }
+
+    .carousel-item {
+        height: 500px;
+    }
+}

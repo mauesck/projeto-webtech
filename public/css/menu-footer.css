@@ -1,0 +1,290 @@
+* {
+    /*border: 1px solid red;/**/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    display: none;
+}
+
+.noselect {
+    user-select: none;
+}
+
+body {
+    margin: 0 auto;
+}
+
+header {
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    transition: background-color 0.5s ease-in-out;
+    /*background-color: #202020;/**/
+}
+
+#menu-dentro {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    border: none !important;
+}
+
+nav {
+    display: flex;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+#div-logo-span {
+    display: none;
+}
+
+#header-logo {
+    width: 200px;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #cecece;
+}
+
+#div-link {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#submenu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 200px;
+    top: 90%;
+    left: 0;
+    background-color: #1c6061;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+#submenu a {
+    font-weight: bold;
+    width: 90%;
+}
+
+#div-link:hover>#submenu {
+    height: 120px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+    color: white;
+    padding: 10px;
+}
+
+footer div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: start;
+    margin: 10px;
+    width: 100%;
+}
+
+footer div div {
+    width: 20%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: center;
+}
+
+footer div img {
+    width: 100%;
+}
+
+#div-localizacao {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div a {
+    text-decoration: none;
+    color: white;
+}
+
+footer div a:hover {
+    text-decoration: none;
+    color: rgb(202, 202, 202);
+}
+
+footer div p {
+    margin: 20px;
+    text-align: center;
+}
+
+footer iframe {
+    width: 100%;
+}
+
+footer hr {
+    width: 80%;
+    border-top: none;
+}
+
+#div-contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#div-contato form {
+    display: flex;
+    flex-direction: column;
+}
+
+#div-contato form input,
+#div-contato form textarea,
+#div-contato form button {
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+}
+
+#div-contato form button{
+    width: 100px;
+    cursor: pointer;
+}
+
+
+
+@media(max-width:768px) {
+    header {
+        background-color: white;
+        width: 0px;
+        height: 80px;
+        transition: width 0.3s ease-in-out;
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        display: none;
+        margin-top: 100px;
+    }
+
+    nav a {
+        padding: 5px;
+    }
+
+    #link-home {
+        padding-bottom: 15px;
+    }
+
+    #div-logo-span {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 2;
+        height: 80px;
+        width: 100%;
+        transition: background-color 0.5s ease-in-out;
+    }
+
+    #span-menu {
+        display: block;
+        width: 40px;
+        font-size: 40px;
+        color: #36B8BA;
+        text-align: center;
+        margin: 20px;
+        transition: transform 0.5s ease;
+    }
+
+    #header-logo {
+        display: none;
+    }
+
+    #logo-mob {
+        display: block;
+        width: 150px;
+        margin: 20px;
+        height: auto;
+    }
+
+    nav div {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    nav #container-links {
+        padding: 10px;
+    }
+
+    nav #div-link {
+        margin-left: 10%;
+    }
+
+    nav #submenu {
+        position: inherit;
+    }
+
+    nav #submenu a {
+        padding: 10px;
+    }
+
+}
+
+#ligaBordas {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: cadetblue;
+}
+
+@media(min-width:769px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #div-logo-span {
+        width: 12%;
+        height: 12%;
+    }
+
+    #span-menu {
+        display: none;
+    }
+
+    nav {
+        flex-direction: column;
+        display: flex;
+    }
+}

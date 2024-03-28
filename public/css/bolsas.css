@@ -1,0 +1,49 @@
+main{
+    background-color: #fff5df;
+}
+
+header{
+    background-color: #202020;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+    padding-top: 50px;
+}
+
+.div-bloco{
+    width: 50%;
+    min-width: 300px;
+    margin: 10px;
+}
+
+.div-bloco h1{
+    font-size: 30px;
+    color: #a77200;
+}
+
+section img{
+    width: 100px;
+    margin: 20px;
+}
+
+button{
+    margin: 30px;
+    padding: 10px;
+    border: none;
+    background-color: #745f35;
+    border-radius: 15px;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #64522d;
+}
